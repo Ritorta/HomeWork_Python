@@ -7,13 +7,23 @@
 # 5 -> 1 0 1 1 0
 # 2
 
-m = int(input('Enter the number: '))
+# ------------
+# Вариант №1
+# ------------
 
-count = 0
+m = input('Enter the number: ')
 
-for i in range(m):
+x = 0
+y = 0
 
-    if i == 1:
-        count+=1
-    
-print(count)    
+for i in m:
+    if int(i) == 1:
+        x = x + 1
+    else:
+        y = y + 1    
+if x < y:
+    print('X minimum quantity ')
+elif x > y:
+     print('Y minimum quantity')
+else:
+    print('Equal quantity X and Y')    
