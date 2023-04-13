@@ -6,3 +6,14 @@
 
 # 5 -> 1 0 1 1 0
 # 2
+
+m = int(input('Enter the number: '))
+
+count = 0
+
+for i in range(m):
+
+    if i == 1:
+        count+=1
+    
+print(count)    
