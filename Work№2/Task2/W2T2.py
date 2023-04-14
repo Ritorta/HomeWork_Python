@@ -6,3 +6,47 @@
 
 # 4 4 -> 2 2
 # 5 6 -> 2 3
+
+# ------------
+# Вариант №1
+# ------------
+
+# x = int(input('Enter number X: '))
+# y = int(input('Enter number Y: '))
+
+# if x < 1 or x > 1000 or y < 1 or y > 1000:
+#     print('Error, x, y > 1000')
+
+# else:
+#     s = x + y
+#     p = x * y
+
+#     x1 = int((s - ((-s) ** 2 - 4 * p) ** 0.5) / 2)
+#     y1 = int((s + ((-s) ** 2 - 4 * p) ** 0.5) / 2)
+#     print('X = ', x1, '—', 'Y = ', y1)
+
+# ------------
+# Вариант №2
+# ------------
+
+x = int(input('Enter number X: '))
+y = int(input('Enter number Y: '))
+
+if x < 1 or x > 1000 or y < 1 or y > 1000:
+    print('Error, x, y > 1000')
+
+else:
+    s = x + y
+    p = x * y
+    
+    for i in range(1, 1001):
+        if i == x:
+            print('X = ', i)
+    for j in range(1, 1001):
+        if j == y:    
+            print('Y = ', j)
+
+        
+
+
+    

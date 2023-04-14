@@ -24,6 +24,6 @@ for i in m:
 if x < y:
     print('X minimum quantity ')
 elif x > y:
-     print('Y minimum quantity')
+    print('Y minimum quantity')
 else:
     print('Equal quantity X and Y')    
