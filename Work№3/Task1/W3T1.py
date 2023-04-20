@@ -8,17 +8,35 @@
 # 3
 # -> 1
 
+# ------------
+# Вариант №1
+# ------------
 
-n = abs(int(input('Size array: ')))
-a = []
-count = 0
-for i in range(0, n):
-    a.append(int(input('Enter array number: ')))
+# n = abs(int(input('Size array: ')))
+# a = []
+# count = 0
+# for i in range(0, n):
+#     a.append(int(input('Enter array number: ')))
 
-x = int(input('Enter the number to found : '))
+# x = int(input('Enter the number to found : '))
 
-for i in range(0, n):
-    if a[i] == x:
-        count += 1
+# for i in range(0, n):
+#     if a[i] == x:
+#         count += 1
     
-print(count)
+# print(count)
+
+# ------------
+# Вариант №2
+# ------------
+
+n = abs(int(input('Enter the size array: ')))
+
+a = []
+
+for i in range(0, n):
+    a.append(int(input('Enter the number: ')))
+
+x = abs(int(input('Enter the number to found: ')))
+
+print(a.count(x))
