@@ -30,13 +30,45 @@
 # Вариант №2
 # ------------
 
-n = abs(int(input('Enter the size array: ')))
+# n = abs(int(input('Enter the size array: ')))
 
-a = []
+# a = []
 
-for i in range(0, n):
-    a.append(int(input('Enter the number: ')))
+# for i in range(0, n):
+#     a.append(int(input('Enter the number: ')))
 
-x = abs(int(input('Enter the number to found: ')))
+# x = abs(int(input('Enter the number to found: ')))
 
-print(a.count(x))
+# print(a.count(x))
+
+# ------------
+# Вариант №3
+# ------------
+
+# n = input('Enter the number: ').split(' ')
+
+# for i in range(len(n)):
+#     n[i] = int(n[i])
+
+# x = int(input('Enter the number to found: '))
+
+# count = 0
+
+# for i in n:
+#     if i == x:
+#         count += 1
+
+# print(count)
+
+# ------------
+# Вариант №4
+# ------------
+
+n = input('Enter the number: ').split(' ')
+
+for i in range(len(n)):
+    n[i] = int(n[i])
+
+x = int(input('Enter the number to found: '))
+
+print(n.count(x))

@@ -9,9 +9,17 @@
 # 6
 # -> 5
 
-n = int(input('Enter size array'))
+n = int(input('Enter size array: '))
 
 a =[]
 
+for i in range(n):
+    a.append(int(input('Enter the number: ')))
 
-print(n)
+x = int(input('Enter the key number: '))
+
+for i in range(n):
+    if x >= n:
+        print(i)
+
+print(a)
