@@ -57,35 +57,6 @@
 # Вариант №3
 # ------------
 
-# n = abs(int(input('Enter size array: ')))
-
-# a =[]
-
-# for i in range(n):
-#     a.append(abs(int(input('Enter the number: '))))
-
-# x = abs(int(input('Enter the key number: ')))
-
-# dif_min = abs(a[0] - x)
-
-# result_min = a[0]
-# result_max = a[-1]
-
-# for i in a:
-#     if abs(i - x) < dif_min:
-#         dif_min = abs(i - x)
-#         result_min = i
-#     dif_max = abs(result_min + 2)
-#     result_max = dif_max
-
-#     if i == x:
-#         result_min = result_min - 1
-#         result_max = result_min + 2
-                
-# print(result_min)
-# print(result_max)
-
-
 n = abs(int(input('Enter size array: ')))
 
 a =[]
@@ -100,21 +71,16 @@ dif_min = abs(a[0] - x)
 result_min = a[0]
 result_max = a[-1]
 
-
 for i in a:
     if abs(i - x) < dif_min:
         dif_min = abs(i - x)
         result_min = i
-        dif_max = abs((result_max - result_min) * 2)
-        result_max = dif_max
+    dif_max = abs(result_min + 2)
+    result_max = dif_max
 
     if i == x:
         result_min = result_min - 1
         result_max = result_min + 2
-
-
-
-
                 
 print(result_min)
 print(result_max)
