@@ -5,3 +5,17 @@
 
 # 2 2
 #     4 
+
+
+def degree(a, b):
+
+    if count < 0:
+        return print(degree(a + b, count))
+    else:
+        degree(a + b, count)
+    
+# a = abs(int(input('a: ')))
+# b = abs(int(input('b: ')))
+count = 0
+    
+degree(1, 1)
