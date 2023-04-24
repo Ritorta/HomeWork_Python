@@ -57,6 +57,39 @@
 # Вариант №3
 # ------------
 
+# n = abs(int(input('Enter size array: ')))
+
+# a =[]
+
+# for i in range(n):
+#     a.append(abs(int(input('Enter the number: '))))
+
+# x = abs(int(input('Enter the key number: ')))
+
+# dif_min = abs(a[0] - x)
+
+# result_min = a[0]
+# result_max = a[-1]
+
+# for i in a:
+#     if abs(i - x) < dif_min:
+#         dif_min = abs(i - x)
+#         result_min = i
+#     dif_max = abs(result_min + 2)
+#     result_max = dif_max
+
+#     if i == x:
+#         result_min = result_min - 1
+#         result_max = result_min + 2
+                
+# print(result_min)
+# print(result_max)
+
+
+# ------------
+# Вариант №4
+# ------------
+
 n = abs(int(input('Enter size array: ')))
 
 a =[]
@@ -67,16 +100,24 @@ for i in range(n):
 x = abs(int(input('Enter the key number: ')))
 
 dif_min = abs(a[0] - x)
+dif_max = 0
 
 result_min = a[0]
 result_max = a[-1]
+
 
 for i in a:
     if abs(i - x) < dif_min:
         dif_min = abs(i - x)
         result_min = i
-    dif_max = abs(result_min + 2)
-    result_max = dif_max
+        for j in range(len(a)):
+            if result_min == a[-1]:
+                dif_max = abs(result_min + 2)
+                result_max = dif_max
+
+            else:
+                dif_max = a[result_min]
+                result_max = dif_max
 
     if i == x:
         result_min = result_min - 1
@@ -84,3 +125,14 @@ for i in a:
                 
 print(result_min)
 print(result_max)
+
+
+
+# a = [5,3,2]
+# for i in range(len(a)):
+#     print(a[i], i)#a[i] - значение, i - индекс (i идет по индексам от 0 до len(a))
+
+# a = [5,3,2]
+# for i in a:
+#     print(i)#значение(i идет по элементам списка a)
+
