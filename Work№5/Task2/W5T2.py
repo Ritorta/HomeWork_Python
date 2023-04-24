@@ -11,35 +11,35 @@
 # Вариант №1
 # ------------
 
-# def degree(a, b):
+# def sum(a, b):
 
 #     if count == 1:
 #         return a + b
     
-#     return abs(degree(count))
+#     return abs(sum(count))
     
-# a = abs(int(input('a: ')))
-# b = abs(int(input('b: ')))
+# a = abs(int(input('Enter fist number: '))
+# b = abs(int(input('Enter second number: ')))
 # count = 1
     
-# print(degree(a, b))
+# print('Sum =', sum(a, b))
 
 # ------------
 # Вариант №2
 # ------------
 
-def degree(a, b):
+def sum(a, b):
 
     if b == 0:
         return a
     
-    return degree(a + 1, b - 1)
+    return sum(a + 1, b - 1)
     
 
-a = abs(int(input('a: ')))
-b = abs(int(input('b: ')))
+a = abs(int(input('Enter fist number: ')))
+b = abs(int(input('Enter second number: ')))
 
     
-print(degree(a, b))
+print('Sum =', sum(a, b))
 
 
