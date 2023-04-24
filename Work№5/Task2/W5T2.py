@@ -4,18 +4,42 @@
 # *Пример:*
 
 # 2 2
-#     4 
+# 4 
 
 
-def degree(a, b):
+# ------------
+# Вариант №1
+# ------------
 
-    if count < 0:
-        return print(degree(a + b, count))
-    else:
-        degree(a + b, count)
+# def degree(a, b):
+
+#     if count == 1:
+#         return a + b
+    
+#     return abs(degree(count))
     
 # a = abs(int(input('a: ')))
 # b = abs(int(input('b: ')))
-count = 0
+# count = 1
     
-degree(1, 1)
+# print(degree(a, b))
+
+# ------------
+# Вариант №2
+# ------------
+
+def degree(a, b):
+
+    if b == 0:
+        return a
+    
+    return degree(a + 1, b - 1)
+    
+
+a = abs(int(input('a: ')))
+b = abs(int(input('b: ')))
+
+    
+print(degree(a, b))
+
+
