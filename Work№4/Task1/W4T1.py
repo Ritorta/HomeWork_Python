@@ -14,3 +14,9 @@
 # Вывод:
 # 6 12
 
+
+a = abs(int(input('a: ')))
+b = abs(int(input('b: ')))
+
+array1 = []
+array2 = []
