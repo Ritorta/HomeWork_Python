@@ -15,11 +15,11 @@
     
 #     return degree(num * count, deg - 1)
     
-# num = abs(int(input('a: ')))
-# deg = abs(int(input('b: ')))
+# num = abs(int(input('Enter fist number: ')))
+# deg = abs(int(input('Enter second number: ')))
 # count = num
     
-# print(degree(num, deg))
+# print('Degree =', degree(num, deg))
 
 # ------------
 # Вариант №2
@@ -32,10 +32,10 @@
     
 #     return num * degree(num, deg - 1)
     
-# num = abs(int(input('a: ')))
-# deg = abs(int(input('b: ')))
+# num = abs(int(input('Enter fist number: ')))
+# deg = abs(int(input('Enter second number: ')))
     
-# print(degree(num, deg)) 
+# print('Degree =', degree(num, deg)) 
 
 # ------------
 # Вариант №3
@@ -48,8 +48,8 @@ def degree(a, b):
     
     return abs(degree(count - 1))
     
-a = abs(int(input('a: ')))
-b = abs(int(input('b: ')))
+a = abs(int(input('Enter fist number: ')))
+b = abs(int(input('Enter second number: ')))
 count = 1
     
-print(degree(a, b))
+print('Degree =', degree(a, b))
