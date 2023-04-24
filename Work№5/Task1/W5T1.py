@@ -9,17 +9,17 @@
 # Вариант №1
 # ------------
 
-def degree(num, deg):
-    if deg == 1:
-        return num
+# def degree(num, deg):
+#     if deg == 1:
+#         return num
     
-    return degree(num * count, deg - 1)
+#     return degree(num * count, deg - 1)
     
-num = abs(int(input('a: ')))
-deg = abs(int(input('b: ')))
-count = num
+# num = abs(int(input('a: ')))
+# deg = abs(int(input('b: ')))
+# count = num
     
-print(degree(num, deg))
+# print(degree(num, deg))
 
 # ------------
 # Вариант №2
@@ -36,3 +36,20 @@ print(degree(num, deg))
 # deg = abs(int(input('b: ')))
     
 # print(degree(num, deg)) 
+
+# ------------
+# Вариант №3
+# ------------
+
+def degree(a, b):
+
+    if count == 1:
+        return a ** b
+    
+    return abs(degree(count - 1))
+    
+a = abs(int(input('a: ')))
+b = abs(int(input('b: ')))
+count = 1
+    
+print(degree(a, b))
