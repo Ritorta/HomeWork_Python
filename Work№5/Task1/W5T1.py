@@ -35,4 +35,4 @@ print(degree(num, deg))
 # num = abs(int(input('a: ')))
 # deg = abs(int(input('b: ')))
     
-# print(degree(num, deg))
+# print(degree(num, deg)) 
