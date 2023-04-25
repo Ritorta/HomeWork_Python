@@ -14,9 +14,66 @@
 # Вывод:
 # 6 12
 
+# ------------
+# Вариант №1
+# ------------
 
-a = abs(int(input('a: ')))
-b = abs(int(input('b: ')))
+# a = int(input('Enter the size first array: '))
+# array1 = set()
 
-array1 = []
-array2 = []
+# b = int(input('Enter the size second array: ')) 
+# array2 = set()
+
+# for i in range(a):
+#     array1.add(int(input('Enter the number for first array: ')))
+
+# print(array1)    
+# for j in range(b): 
+#     array2.add(int(input('Enter the number for second array: ')))
+
+# print(array2)
+
+# z = array1.intersection(array2)
+
+# print('The intersection array:', z)
+
+# ------------
+# Вариант №2
+# ------------
+
+# a = int(input('Enter the size first array: '))
+
+# array1 = set()
+
+# for i in range(a):
+#     array1.add(int(input('Enter the number for first array: ')))
+
+# b = int(input('Enter the size second array: '))
+
+# array2 = set()
+
+# for j in range(b):
+#     array2.add(int(input('Enter the number for second array: ')))
+
+# array3 = set()
+
+# for z in array1:
+#     if z in array2:
+#             array3.add(z)
+
+# print('The intersection array:', array3)
+
+
+# ------------
+# Вариант №3
+# ------------
+
+a = int(input('Enter the size first array: '))
+array1 = set(int(input('Enter the number for first array: ')) for i in range(a))
+
+b = int(input('Enter the size second array: ')) 
+array2 = set(int(input('Enter the number for second array: ')) for j in range(b))
+
+array3 = array1.intersection(array2)
+
+print(array3)
