@@ -16,7 +16,45 @@
 # Вариант №1
 # ------------
 
+# number = abs(int(input("Enter to start number: ")))
+# steep = abs(int(input('Enter the number step: ')))
+# count = abs(int(input('Enter count number: ')))
 
+# array = []
+# an = 0
+
+# if count > 0:
+#     for i in range(count + 1):
+#         if i > 0:
+#             an = number + (i - 1) * steep
+#             array.append(an)
+
+#     print(array)
+
+# else:
+#     print('Error, count = 0, please enter the count > 0.')
+
+
+# ------------
+# Вариант №2
+# ------------
+
+number = abs(int(input("Enter to start number: ")))
+steep = abs(int(input('Enter the number step: ')))
+count = abs(int(input('Enter count number: ')))
 
 array = []
+an = 0
 
+if count > 0:
+    while 0 < count:
+        an = number + (count - 1) * steep
+        array.append(an)
+        count -= 1
+    print(list(reversed(array)))
+else:
+    print('Error, count = 0, please enter the count > 0.')
+
+# ------------
+# Вариант №3
+# ------------
