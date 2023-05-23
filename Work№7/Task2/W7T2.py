@@ -35,4 +35,3 @@ def print_operation_table(operation, rows = 6, coloumns = 6):
 tabl = lambda x, y: x * y
 
 print_operation_table(tabl)
-
