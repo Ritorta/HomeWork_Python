@@ -54,7 +54,3 @@ if count > 0:
     print(list(reversed(array)))
 else:
     print('Error, count = 0, please enter the count > 0.')
-
-# ------------
-# Вариант №3
-# ------------
