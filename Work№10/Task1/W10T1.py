@@ -45,7 +45,7 @@ random.shuffle(lst)
 data = pd.DataFrame({'whoAmI': lst})
 # print(data)
 
-data['tmp'] = 1
+data['df'] = 1
 data.set_index([data.index, 'whoAmI'], inplace=True)
 final_df = data.unstack(level=-1, fill_value = 0).astype(int)
 final_df.columns = final_df.columns.droplevel()
