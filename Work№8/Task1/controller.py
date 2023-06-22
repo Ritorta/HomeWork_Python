@@ -1,6 +1,8 @@
 import view
 import database
 
+
+
 def main():
     while True:
         num = view.user_input()

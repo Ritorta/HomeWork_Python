@@ -28,10 +28,16 @@ def sort_base_name():
 
 def sort_base_date():
     with open('BASE.txt', 'r', encoding='utf-8') as file:
-        sorts = file.readlines()
-        sorts.sort(key=lambda x: x[3])
+        sort_date = file.readlines()
+        
+        j = [i.split(":") for i in sort_date]
+        
+        print("Old = ", j)
+
+        j.sort(key = lambda x: x[4])
+        print("New = ", j)
     with open('BASE.txt', 'w', encoding='utf-8') as file:
-        file.writelines(sorts)
+        file.writelines(sort_date) # - сортировка по какойто причине сюда не предаётся...
         print('Сортировка завершина.')
     # input("Нажмите клавижшу для продолжения: ")
 
