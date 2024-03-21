@@ -60,13 +60,13 @@
 
 class Dragon:
 
-    # Функция инициализация класса Dragon
+    # Функция инициализация класса Dragon, поулчение(назначение) переменных
     def __init__(self, height, danger, color):
         self.height = height
         self.danger = danger
         self.color = color
 
-    # Функция сравнения
+    # Функция сравнения возвращает True, если текущий объект меньше другого объекта, и False в противном случае.
     def __lt__(self, other):
         if self.height != other.height:
             return self.height < other.height
@@ -74,11 +74,11 @@ class Dragon:
             return self.danger < other.danger
         return self.color < other.color
 
-    # Функция сравнения
+    # Функция сравнения возвращает True, если текущий объект равен другому объекту, и False в противном случае.
     def __eq__(self, other):
         return self.height == other.height and self.danger == other.danger and self.color == other.color
 
-    # Функция сравнения
+    # Функция сравнения возвращает True, если текущий объект меньше или равен другому объекту, и False в противном случае.
     def __le__(self, other):
         if self.height != other.height:
             return self.height <= other.height
